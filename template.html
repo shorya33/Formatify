@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Report</title>
+    <link rel="stylesheet" href="/content/sample_data/style.css">
+
+</head>
+<body>
+    <!-- Title Page -->
+    <div class="page title-page">
+        {% if logo_base64 %}
+            <p><img src="file:///content/sample_data/1376107-middle.png" alt="College Logo" style="width: 100px; height: auto;"/></p>
+        {% endif %}
+        <h1>A PROJECT REPORT</h1>
+        <p>on</p>
+        <h2>{{ project_name }}</h2>
+        <p>Submitted by</p>
+        <p>{{ student_name }}</p>
+        <p>in partial fulfillment for the award of the degree</p>
+        <p>of</p>
+        <h2>BACHELOR OF SCIENCE</h2>
+        <p>in</p>
+        <h2>COMPUTER SCIENCE</h2>
+        <p>under the guidance of</p>
+        <p>{{ guide_name }}</p>
+        <p>Department of Computer Science</p>
+        
+        
+        <p>{{ college_name }}</p>
+        <p>(Sem V / VI)</p>
+        <p>{{ academic_year }}</p>
+    </div>
+
+    <div class="page certificate-page">
+        <div class="certificate-border">
+            <h2>CERTIFICATE</h2>
+            <p>
+                This is to certify that Mr./Ms. {{ student_name }} of T.Y.B.Sc. (Sem V/VI) class has
+                satisfactorily completed the Project {{ project_name }}, to be submitted in the partial fulfillment
+                for the award of Bachelor of Science in Computer Science during the academic year {{ academic_year }}.
+            </p>
+    
+            <!-- First Row: Two Signatures -->
+        <div class="signature-row">
+            <div class="signature-line">
+                <p>___________________</p>
+                <p>Signature of Project Guide</p>
+            </div>
+            <div class="signature-line">
+                <p>___________________</p>
+                <p>Signature of Principal</p>
+            </div>
+        </div>
+
+        <!-- Second Row: Three Signatures -->
+        <div class="signature-row">
+            <div class="signature-line">
+                <p>___________________</p>
+                <p>Internal Examiner</p>
+            </div>
+            <div class="signature-line">
+                <p>___________________</p>
+                <p>College Seal</p>
+            </div>
+            <div class="signature-line">
+                <p>___________________</p>
+                <p>External Examiner</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <!-- Declaration Page -->
+    <div class="page declaration-page">
+        <h2>DECLARATION</h2>
+        <p>
+            I, {{ student_name }}, hereby declare that the project entitled
+            “{{ project_name }}” submitted in the partial fulfillment for the
+            award of Bachelor of Science in Computer Science during the academic year {{ academic_year }} is my original work
+            and the project has not formed the basis for the award of any degree, associateship, fellowship, or any other
+            similar titles.
+        </p>
+        <p class="signature">
+            Signature of the Student:
+        </p>
+        <p>
+            Place: ____________
+        </p>
+        <p>
+            Date: ____________
+        </p>
+    </div>
+</body>
+</html>
